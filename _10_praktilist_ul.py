@@ -1,3 +1,75 @@
+#22 ulesanne
+kokku = 0
+for i in range(100, 201):
+    if i % 17 == 0:
+        kokku += i
+print("sum:", kokku)
+
+#20 ulesanne
+vmeste = 0
+for n in range(1, 51):
+    if n % 5 == 0 or n % 7 == 0:
+        vmeste+= n
+print("sum:", vmeste)
+
+print()
+#16 ulesanne
+for i in range(1, 10):
+    print("0" * (i - 1) + str(i) + "0" * (9 - i))
+
+
+#14 ulesanne
+import random  
+
+randomnomerok = random.randint(1, 20)   
+arv= 1
+for i in range(1, randomnomerok + 1):
+    arv*= i
+    print(f"korrtamine 1 kuni {randomnomerok}: {i}*{randomnomerok} = {arv}")
+
+#13 ulesanne
+skok = 0  
+suma = 0  
+
+for num in range(100, 1001): 
+    if num % 7 == 0: 
+        skok += 1  
+        suma += num  
+
+print(f"arvude kogus: {skok}")  
+print(f"arvude summa: {suma}")  
+#9 ulesanne
+s=int(input("summa v banke: "))
+n=int(input("kakoi ona stanet cherez aastad: "))
+while n > 0:
+    s = (s * 3)/100 + s
+    n -= 1
+    print (round(s, 2))
+
+#8 ulesanne
+for i in range(1, 21):
+    sm=i*2.5
+    print(f"{sm}")
+
+
+#7 ulesanne
+a= int(input("kirjutage vahemiku algus: "))
+b= int(input("kirjutage vahemiku lopp: "))
+k= int(input("kirjuta arv: "))
+for i in range(a,b+1): 
+    if i % k == 0: 
+        print(i)
+
+
+#4 ulesanne
+for i in range(10, 21):
+    print(f"{i}^2 = {i**2}")
+
+
+#16 ulesanne
+for i in range(1, 10):
+    print("0" * (i - 1) + str(i) + "0" * (9 - i))
+
 #10 ulesanne
 for j in range(10):
      a1=float(input("essa arv: "))
